@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>author</key>
+	<string>Du Song</string>
+	<key>category</key>
+	<string>Format</string>
+	<key>command</key>
+	<string>#!/usr/bin/python
+
+# Installation Notes:
+# $ easy_install sqlparse
+
+import sys
+import sqlparse
+s = ""
+for line in sys.stdin:
+	s += line
+print sqlparse.format(s, keyword_case="upper", reindent=True, indent_width=2)
+</string>
+	<key>contact</key>
+	<string>qhfbat@ebyyvatpbqr.bet</string>
+	<key>defaultBundleWasModified</key>
+	<true/>
+	<key>description</key>
+	<string>Replace with re-formated sql (via python-sqlparse)
+
+Install with:
+easy_install sqlparse
+</string>
+	<key>input</key>
+	<string>selectedtext</string>
+	<key>input_fallback</key>
+	<string>currentquery</string>
+	<key>internalKeyEquivalent</key>
+	<dict>
+		<key>characters</key>
+		<string>R</string>
+		<key>keyCode</key>
+		<integer>15</integer>
+		<key>modifierFlags</key>
+		<integer>262144</integer>
+	</dict>
+	<key>isDefaultBundle</key>
+	<true/>
+	<key>keyEquivalent</key>
+	<string>^r</string>
+	<key>name</key>
+	<string>Reformat SQL</string>
+	<key>output</key>
+	<string>replaceselection</string>
+	<key>scope</key>
+	<string>inputfield</string>
+	<key>tooltip</key>
+	<string>replace with re-formated sql (via python-sqlparse)</string>
+	<key>uuid</key>
+	<string>CA848F74-BC7D-47EA-8CEC-B8796B11E86A</string>
+</dict>
+</plist>
